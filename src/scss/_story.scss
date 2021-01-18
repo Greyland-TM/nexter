@@ -11,6 +11,12 @@
         background-image: linear-gradient(rgba($color-primary, .5),
             rgba($color-primary, .5)),
             url('../madia/back.jpg');
+        background-size: cover;
+
+            @media only screen and (max-width: $bp-medium) {
+                grid-column: 1 / -1;
+                padding: 3rem;
+            }
     }
 
     &__img {
@@ -21,6 +27,13 @@
             grid-row: 2/ 6;
             grid-column: 2/ 6;
             box-shadow: 0 2rem 5rem rgba(0, 0, 0, .2);
+
+            @media only screen and (max-width: $bp-medium) {
+                grid-row: 1 / -1;
+                grid-column: 1 / 5;
+                height: 100%;
+                width: 100%;
+            }
         }
 
         &--2 {
@@ -29,6 +42,11 @@
             grid-column: 4/ 7;
             z-index: 2;
             box-shadow: 0 2rem 5rem rgba(0, 0, 0, .4);
+
+            @media only screen and (max-width: $bp-medium) {
+                grid-row: 1 / -1;
+                width: 100%;;
+            }
         }
     }
 
@@ -43,6 +61,11 @@
         display: grid;
         align-content: center;
         justify-items: start;
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-column: 1 / -1;
+            grid-row: 5 / 6;
+        }
     }
 
     &__text {

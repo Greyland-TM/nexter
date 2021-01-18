@@ -2,7 +2,7 @@ import React from 'react';
 
 const Sidebar = () => (
     <div className="sidebar">
-        Sidebar
+        <button className="nav-btn"></button>
     </div>
 );
 
